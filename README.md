@@ -5,7 +5,7 @@ and set it as you browser home page
 
 and put 
 
-a background.jpg 
-and a my-icon.png
+a background. any typw of image file 
+and a my-icon. any type of iamge file
 
 thanks
