@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* this is were you put ur background image */
+body {
+  background: url('') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.utility-band {
+  background: rgba(0, 0, 0, 0.4); 
+  backdrop-filter: blur(12px);           
+  -webkit-backdrop-filter: blur(12px);   
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;                  
+  padding: 15px 20px;           
+  z-index: 10;                  
+}
+
+.utility-list {
+  display: flex;                
+  justify-content: center;      
+  align-items: center;          
+  list-style: none;             
+  flex-wrap: wrap;              
+  gap: 12px;                    
+}
+
+.utility-list li {
+  display: flex;
+  align-items: center;
+}
+
+.utility-list a {
+  color: #e0e0e0;               
+  text-decoration: none;        
+  font-size: 14px;
+  font-weight: 400;
+  transition: color 0.2s ease;  
+}
+
+.utility-list a:hover {
+  color: #ffffff;               
+}
+
+.utility-list li:not(:last-child)::after {
+  content: "|";                 
+  color: rgba(255, 255, 255, 0.3); 
+  margin-left: 12px;            
+  font-size: 14px;
+  user-select: none;            
+}
+
+.glass-panel {
+  background: rgba(0, 0, 0, 0.45); 
+  backdrop-filter: blur(16px);           
+  -webkit-backdrop-filter: blur(16px);   
+  width: 400px;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #ffffff;
+}
+
+.glass-panel h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.glass-panel p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 25px;
+}
+
+.custom-btn {
+  display: inline-block;          
+  text-decoration: none;          
+  text-align: center;             
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 12px 30px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);    
+}
+
+.custom-btn:active {
+  transform: translateY(0);       
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+}
