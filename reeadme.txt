@@ -1,0 +1,7 @@
+read thrugh all the code
+
+dont put hte reade me in the folder 
+
+at line 8 of style.css you put ur bakcground image make sure it is in the smae fold
+
+thanks!!!!!!!!!!!!!!!!!!!!!!!!!!
